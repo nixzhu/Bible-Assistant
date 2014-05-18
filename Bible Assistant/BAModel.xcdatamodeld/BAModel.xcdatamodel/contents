@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BibleAudio" representedClassName="BibleAudio" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audio_male" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url_male" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Bookmark" representedClassName="Bookmark" syncable="YES">
+        <attribute name="chapter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapterTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="section" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="sectionNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="volumeTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BibleAudio" positionX="-63" positionY="45" width="128" height="135"/>
+        <element name="Bookmark" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>

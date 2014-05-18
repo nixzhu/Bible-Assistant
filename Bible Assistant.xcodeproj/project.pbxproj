@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4793EEB918E3BF0500CBBA0C /* BAModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4793EEB718E3BF0500CBBA0C /* BAModel.xcdatamodeld */; };
+		4793EEC218E4019700CBBA0C /* BABookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4793EEC118E4019700CBBA0C /* BABookmarksViewController.m */; };
+		4793EEC618E4302000CBBA0C /* BABookmarkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4793EEC518E4302000CBBA0C /* BABookmarkCell.m */; };
+		47E38C7118D853A900EB2224 /* BASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E38C7018D853A900EB2224 /* BASearchViewController.m */; };
+		47E38C7518D8543F00EB2224 /* BASearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E38C7418D8543F00EB2224 /* BASearchResultCell.m */; };
+		47E38C7E18D9841000EB2224 /* UIView+BAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E38C7D18D9841000EB2224 /* UIView+BAAnimation.m */; };
+		47E38C8218D98B1800EB2224 /* BALabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E38C8118D98B1800EB2224 /* BALabel.m */; };
+		47E38C8518D99FAF00EB2224 /* BATextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E38C8418D99FAF00EB2224 /* BATextView.m */; };
+		47E38C8818D9AA6F00EB2224 /* BAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E38C8718D9AA6F00EB2224 /* BAView.m */; };
+		501C56651905480C0098937E /* BAAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 501C56641905480C0098937E /* BAAudioPlayer.m */; };
+		5076120818CAA7460043773C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076120718CAA7460043773C /* Foundation.framework */; };
+		5076120A18CAA7460043773C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076120918CAA7460043773C /* CoreGraphics.framework */; };
+		5076120C18CAA7460043773C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076120B18CAA7460043773C /* UIKit.framework */; };
+		5076121218CAA7460043773C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5076121018CAA7460043773C /* InfoPlist.strings */; };
+		5076121418CAA7460043773C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076121318CAA7460043773C /* main.m */; };
+		5076121818CAA7460043773C /* BAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076121718CAA7460043773C /* BAAppDelegate.m */; };
+		5076121B18CAA7460043773C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5076121918CAA7460043773C /* Main_iPhone.storyboard */; };
+		5076121E18CAA7460043773C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5076121C18CAA7460043773C /* Main_iPad.storyboard */; };
+		5076122318CAA7470043773C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5076122218CAA7470043773C /* Images.xcassets */; };
+		5076122A18CAA7470043773C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076122918CAA7470043773C /* XCTest.framework */; };
+		5076122B18CAA7470043773C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076120718CAA7460043773C /* Foundation.framework */; };
+		5076122C18CAA7470043773C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5076120B18CAA7460043773C /* UIKit.framework */; };
+		5076123418CAA7470043773C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5076123218CAA7470043773C /* InfoPlist.strings */; };
+		5076123618CAA7470043773C /* Bible_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076123518CAA7470043773C /* Bible_AssistantTests.m */; };
+		5076124318CAC2910043773C /* BABibleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076124218CAC2910043773C /* BABibleViewController.m */; };
+		5076124618CAC2D60043773C /* BABibleVolumeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076124518CAC2D60043773C /* BABibleVolumeCell.m */; };
+		5076124918CAC6060043773C /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076124818CAC6060043773C /* UIColor+AppColor.m */; };
+		5076124D18CAC9C00043773C /* BABibleChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076124C18CAC9C00043773C /* BABibleChapterViewController.m */; };
+		5076125018CAC9E10043773C /* BABibleChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076124F18CAC9E10043773C /* BABibleChapterCell.m */; };
+		5076125518CADD410043773C /* BABibleSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076125418CADD410043773C /* BABibleSectionViewController.m */; };
+		5076125818CB1D280043773C /* BABibleTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076125718CB1D280043773C /* BABibleTitleCell.m */; };
+		5076125B18CB1D3F0043773C /* BABibleTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076125A18CB1D3F0043773C /* BABibleTextCell.m */; };
+		5076126718CD9AFF0043773C /* BAQuoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076126618CD9AFF0043773C /* BAQuoteViewController.m */; };
+		508F628E18E7BE9C00AA3070 /* BAAudioSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F628D18E7BE9C00AA3070 /* BAAudioSaver.m */; };
+		508F629518E7CF9700AA3070 /* BAAudioVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F629418E7CF9700AA3070 /* BAAudioVolumeViewController.m */; };
+		508F629818E7CFC400AA3070 /* BAAudioChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F629718E7CFC400AA3070 /* BAAudioChapterViewController.m */; };
+		508F62A118E80AF100AA3070 /* BAAudioChapterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F62A018E80AF100AA3070 /* BAAudioChapterCell.m */; };
+		508F62A418EFB4DC00AA3070 /* bible.xml in Resources */ = {isa = PBXBuildFile; fileRef = 508F62A318EFB4DC00AA3070 /* bible.xml */; };
+		508F62A718EFBCCF00AA3070 /* BASettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F62A618EFBCCF00AA3070 /* BASettingsViewController.m */; };
+		508F62AC18F02F1500AA3070 /* BibleAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F62AB18F02F1500AA3070 /* BibleAudio.m */; };
+		508F62AF18F02F1500AA3070 /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F62AE18F02F1500AA3070 /* Bookmark.m */; };
+		508F62B518F0366300AA3070 /* BibleAudio+BAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F62B418F0366300AA3070 /* BibleAudio+BAAdditions.m */; };
+		50E0CFBE190CA45C0023C04B /* BAStatusHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E0CFBD190CA45C0023C04B /* BAStatusHUD.m */; };
+		50F37B9E18F8D33900F85560 /* BADownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F37B9D18F8D33900F85560 /* BADownloadManager.m */; };
+		9D57ED43204649E69C45849D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8B36E577DC4AA98689D42B /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5076122D18CAA7470043773C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507611FC18CAA7460043773C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5076120318CAA7460043773C;
+			remoteInfo = "Bible Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4793EEB818E3BF0500CBBA0C /* BAModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BAModel.xcdatamodel; sourceTree = "<group>"; };
+		4793EEC018E4019700CBBA0C /* BABookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABookmarksViewController.h; path = Bookmark/BABookmarksViewController.h; sourceTree = "<group>"; };
+		4793EEC118E4019700CBBA0C /* BABookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABookmarksViewController.m; path = Bookmark/BABookmarksViewController.m; sourceTree = "<group>"; };
+		4793EEC418E4302000CBBA0C /* BABookmarkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABookmarkCell.h; path = Bookmark/BABookmarkCell.h; sourceTree = "<group>"; };
+		4793EEC518E4302000CBBA0C /* BABookmarkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABookmarkCell.m; path = Bookmark/BABookmarkCell.m; sourceTree = "<group>"; };
+		47E38C6F18D853A900EB2224 /* BASearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BASearchViewController.h; path = Search/BASearchViewController.h; sourceTree = "<group>"; };
+		47E38C7018D853A900EB2224 /* BASearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BASearchViewController.m; path = Search/BASearchViewController.m; sourceTree = "<group>"; };
+		47E38C7318D8543F00EB2224 /* BASearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BASearchResultCell.h; path = Search/BASearchResultCell.h; sourceTree = "<group>"; };
+		47E38C7418D8543F00EB2224 /* BASearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BASearchResultCell.m; path = Search/BASearchResultCell.m; sourceTree = "<group>"; };
+		47E38C7C18D9841000EB2224 /* UIView+BAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BAAnimation.h"; path = "CustomUI/UIView+BAAnimation.h"; sourceTree = "<group>"; };
+		47E38C7D18D9841000EB2224 /* UIView+BAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BAAnimation.m"; path = "CustomUI/UIView+BAAnimation.m"; sourceTree = "<group>"; };
+		47E38C8018D98B1800EB2224 /* BALabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BALabel.h; path = CustomUI/BALabel.h; sourceTree = "<group>"; };
+		47E38C8118D98B1800EB2224 /* BALabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BALabel.m; path = CustomUI/BALabel.m; sourceTree = "<group>"; };
+		47E38C8318D99FAF00EB2224 /* BATextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BATextView.h; path = CustomUI/BATextView.h; sourceTree = "<group>"; };
+		47E38C8418D99FAF00EB2224 /* BATextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BATextView.m; path = CustomUI/BATextView.m; sourceTree = "<group>"; };
+		47E38C8618D9AA6F00EB2224 /* BAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAView.h; path = CustomUI/BAView.h; sourceTree = "<group>"; };
+		47E38C8718D9AA6F00EB2224 /* BAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAView.m; path = CustomUI/BAView.m; sourceTree = "<group>"; };
+		501C56631905480C0098937E /* BAAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAudioPlayer.h; sourceTree = "<group>"; };
+		501C56641905480C0098937E /* BAAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAudioPlayer.m; sourceTree = "<group>"; };
+		50505ACB18E1B89F00F82C36 /* BABibleTextCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleTextCellDelegate.h; path = Bible/BABibleTextCellDelegate.h; sourceTree = "<group>"; };
+		5056AF2718E47832003E4A7C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5056AF2818E47832003E4A7C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5076120418CAA7460043773C /* Bible Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5076120718CAA7460043773C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5076120918CAA7460043773C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5076120B18CAA7460043773C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5076120F18CAA7460043773C /* Bible Assistant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bible Assistant-Info.plist"; sourceTree = "<group>"; };
+		5076121118CAA7460043773C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5076121318CAA7460043773C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5076121518CAA7460043773C /* Bible Assistant-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bible Assistant-Prefix.pch"; sourceTree = "<group>"; };
+		5076121618CAA7460043773C /* BAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAAppDelegate.h; sourceTree = "<group>"; };
+		5076121718CAA7460043773C /* BAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAAppDelegate.m; sourceTree = "<group>"; };
+		5076121A18CAA7460043773C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5076121D18CAA7460043773C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5076122218CAA7470043773C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5076122818CAA7470043773C /* Bible AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5076122918CAA7470043773C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5076123118CAA7470043773C /* Bible AssistantTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bible AssistantTests-Info.plist"; sourceTree = "<group>"; };
+		5076123318CAA7470043773C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5076123518CAA7470043773C /* Bible_AssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bible_AssistantTests.m; sourceTree = "<group>"; };
+		5076124118CAC2910043773C /* BABibleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleViewController.h; path = Bible/BABibleViewController.h; sourceTree = "<group>"; };
+		5076124218CAC2910043773C /* BABibleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleViewController.m; path = Bible/BABibleViewController.m; sourceTree = "<group>"; };
+		5076124418CAC2D60043773C /* BABibleVolumeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleVolumeCell.h; path = Bible/BABibleVolumeCell.h; sourceTree = "<group>"; };
+		5076124518CAC2D60043773C /* BABibleVolumeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleVolumeCell.m; path = Bible/BABibleVolumeCell.m; sourceTree = "<group>"; };
+		5076124718CAC6060043773C /* UIColor+AppColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AppColor.h"; sourceTree = "<group>"; };
+		5076124818CAC6060043773C /* UIColor+AppColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppColor.m"; sourceTree = "<group>"; };
+		5076124B18CAC9C00043773C /* BABibleChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleChapterViewController.h; path = Bible/BABibleChapterViewController.h; sourceTree = "<group>"; };
+		5076124C18CAC9C00043773C /* BABibleChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleChapterViewController.m; path = Bible/BABibleChapterViewController.m; sourceTree = "<group>"; };
+		5076124E18CAC9E10043773C /* BABibleChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleChapterCell.h; path = Bible/BABibleChapterCell.h; sourceTree = "<group>"; };
+		5076124F18CAC9E10043773C /* BABibleChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleChapterCell.m; path = Bible/BABibleChapterCell.m; sourceTree = "<group>"; };
+		5076125318CADD410043773C /* BABibleSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleSectionViewController.h; path = Bible/BABibleSectionViewController.h; sourceTree = "<group>"; };
+		5076125418CADD410043773C /* BABibleSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleSectionViewController.m; path = Bible/BABibleSectionViewController.m; sourceTree = "<group>"; };
+		5076125618CB1D280043773C /* BABibleTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleTitleCell.h; path = Bible/BABibleTitleCell.h; sourceTree = "<group>"; };
+		5076125718CB1D280043773C /* BABibleTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleTitleCell.m; path = Bible/BABibleTitleCell.m; sourceTree = "<group>"; };
+		5076125918CB1D3F0043773C /* BABibleTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BABibleTextCell.h; path = Bible/BABibleTextCell.h; sourceTree = "<group>"; };
+		5076125A18CB1D3F0043773C /* BABibleTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BABibleTextCell.m; path = Bible/BABibleTextCell.m; sourceTree = "<group>"; };
+		5076126518CD9AFF0043773C /* BAQuoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAQuoteViewController.h; path = Quote/BAQuoteViewController.h; sourceTree = "<group>"; };
+		5076126618CD9AFF0043773C /* BAQuoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAQuoteViewController.m; path = Quote/BAQuoteViewController.m; sourceTree = "<group>"; };
+		508F628C18E7BE9C00AA3070 /* BAAudioSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAudioSaver.h; sourceTree = "<group>"; };
+		508F628D18E7BE9C00AA3070 /* BAAudioSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAudioSaver.m; sourceTree = "<group>"; };
+		508F629318E7CF9700AA3070 /* BAAudioVolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAudioVolumeViewController.h; path = Audio/BAAudioVolumeViewController.h; sourceTree = "<group>"; };
+		508F629418E7CF9700AA3070 /* BAAudioVolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAAudioVolumeViewController.m; path = Audio/BAAudioVolumeViewController.m; sourceTree = "<group>"; };
+		508F629618E7CFC400AA3070 /* BAAudioChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAudioChapterViewController.h; path = Audio/BAAudioChapterViewController.h; sourceTree = "<group>"; };
+		508F629718E7CFC400AA3070 /* BAAudioChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAAudioChapterViewController.m; path = Audio/BAAudioChapterViewController.m; sourceTree = "<group>"; };
+		508F629F18E80AF100AA3070 /* BAAudioChapterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAudioChapterCell.h; path = Audio/BAAudioChapterCell.h; sourceTree = "<group>"; };
+		508F62A018E80AF100AA3070 /* BAAudioChapterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BAAudioChapterCell.m; path = Audio/BAAudioChapterCell.m; sourceTree = "<group>"; };
+		508F62A218E84AB800AA3070 /* BAAudioChpaterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BAAudioChpaterDelegate.h; path = Audio/BAAudioChpaterDelegate.h; sourceTree = "<group>"; };
+		508F62A318EFB4DC00AA3070 /* bible.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bible.xml; sourceTree = "<group>"; };
+		508F62A518EFBCCF00AA3070 /* BASettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BASettingsViewController.h; path = Settings/BASettingsViewController.h; sourceTree = "<group>"; };
+		508F62A618EFBCCF00AA3070 /* BASettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BASettingsViewController.m; path = Settings/BASettingsViewController.m; sourceTree = "<group>"; };
+		508F62AA18F02F1500AA3070 /* BibleAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibleAudio.h; sourceTree = "<group>"; };
+		508F62AB18F02F1500AA3070 /* BibleAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibleAudio.m; sourceTree = "<group>"; };
+		508F62AD18F02F1500AA3070 /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		508F62AE18F02F1500AA3070 /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		508F62B318F0366300AA3070 /* BibleAudio+BAAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BibleAudio+BAAdditions.h"; sourceTree = "<group>"; };
+		508F62B418F0366300AA3070 /* BibleAudio+BAAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BibleAudio+BAAdditions.m"; sourceTree = "<group>"; };
+		50E0CFBC190CA45C0023C04B /* BAStatusHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAStatusHUD.h; sourceTree = "<group>"; };
+		50E0CFBD190CA45C0023C04B /* BAStatusHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAStatusHUD.m; sourceTree = "<group>"; };
+		50F37B9C18F8D33900F85560 /* BADownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADownloadManager.h; sourceTree = "<group>"; };
+		50F37B9D18F8D33900F85560 /* BADownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADownloadManager.m; sourceTree = "<group>"; };
+		8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		FF8B36E577DC4AA98689D42B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5076120118CAA7460043773C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076120A18CAA7460043773C /* CoreGraphics.framework in Frameworks */,
+				5076120C18CAA7460043773C /* UIKit.framework in Frameworks */,
+				5076120818CAA7460043773C /* Foundation.framework in Frameworks */,
+				9D57ED43204649E69C45849D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5076122518CAA7470043773C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076122A18CAA7470043773C /* XCTest.framework in Frameworks */,
+				5076122C18CAA7470043773C /* UIKit.framework in Frameworks */,
+				5076122B18CAA7470043773C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4793EEC318E4019D00CBBA0C /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				4793EEC018E4019700CBBA0C /* BABookmarksViewController.h */,
+				4793EEC118E4019700CBBA0C /* BABookmarksViewController.m */,
+				4793EEC418E4302000CBBA0C /* BABookmarkCell.h */,
+				4793EEC518E4302000CBBA0C /* BABookmarkCell.m */,
+			);
+			name = Bookmark;
+			sourceTree = "<group>";
+		};
+		47E38C7218D853AE00EB2224 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				47E38C6F18D853A900EB2224 /* BASearchViewController.h */,
+				47E38C7018D853A900EB2224 /* BASearchViewController.m */,
+				47E38C7318D8543F00EB2224 /* BASearchResultCell.h */,
+				47E38C7418D8543F00EB2224 /* BASearchResultCell.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		47E38C7F18D9841500EB2224 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				47E38C7C18D9841000EB2224 /* UIView+BAAnimation.h */,
+				47E38C7D18D9841000EB2224 /* UIView+BAAnimation.m */,
+				47E38C8018D98B1800EB2224 /* BALabel.h */,
+				47E38C8118D98B1800EB2224 /* BALabel.m */,
+				47E38C8318D99FAF00EB2224 /* BATextView.h */,
+				47E38C8418D99FAF00EB2224 /* BATextView.m */,
+				47E38C8618D9AA6F00EB2224 /* BAView.h */,
+				47E38C8718D9AA6F00EB2224 /* BAView.m */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		507611FB18CAA7460043773C = {
+			isa = PBXGroup;
+			children = (
+				5076120D18CAA7460043773C /* Bible Assistant */,
+				5076122F18CAA7470043773C /* Bible AssistantTests */,
+				5076120618CAA7460043773C /* Frameworks */,
+				5076120518CAA7460043773C /* Products */,
+				8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		5076120518CAA7460043773C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5076120418CAA7460043773C /* Bible Assistant.app */,
+				5076122818CAA7470043773C /* Bible AssistantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5076120618CAA7460043773C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5076120718CAA7460043773C /* Foundation.framework */,
+				5076120918CAA7460043773C /* CoreGraphics.framework */,
+				5076120B18CAA7460043773C /* UIKit.framework */,
+				5076122918CAA7470043773C /* XCTest.framework */,
+				FF8B36E577DC4AA98689D42B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5076120D18CAA7460043773C /* Bible Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				508F62A918EFC50400AA3070 /* Core Data */,
+				5076124718CAC6060043773C /* UIColor+AppColor.h */,
+				5076124818CAC6060043773C /* UIColor+AppColor.m */,
+				5076121618CAA7460043773C /* BAAppDelegate.h */,
+				5076121718CAA7460043773C /* BAAppDelegate.m */,
+				50F37B9C18F8D33900F85560 /* BADownloadManager.h */,
+				50F37B9D18F8D33900F85560 /* BADownloadManager.m */,
+				501C56631905480C0098937E /* BAAudioPlayer.h */,
+				501C56641905480C0098937E /* BAAudioPlayer.m */,
+				50E0CFBC190CA45C0023C04B /* BAStatusHUD.h */,
+				50E0CFBD190CA45C0023C04B /* BAStatusHUD.m */,
+				5076121918CAA7460043773C /* Main_iPhone.storyboard */,
+				5076121C18CAA7460043773C /* Main_iPad.storyboard */,
+				5076124A18CAC9910043773C /* Bible */,
+				4793EEC318E4019D00CBBA0C /* Bookmark */,
+				5076126818CD9B030043773C /* Quote */,
+				47E38C7218D853AE00EB2224 /* Search */,
+				508F629218E7CF2B00AA3070 /* Audio */,
+				508F62A818EFBCD700AA3070 /* Settings */,
+				47E38C7F18D9841500EB2224 /* CustomUI */,
+				5076122218CAA7470043773C /* Images.xcassets */,
+				5076120E18CAA7460043773C /* Supporting Files */,
+			);
+			path = "Bible Assistant";
+			sourceTree = "<group>";
+		};
+		5076120E18CAA7460043773C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				508F62A318EFB4DC00AA3070 /* bible.xml */,
+				5076120F18CAA7460043773C /* Bible Assistant-Info.plist */,
+				5076121018CAA7460043773C /* InfoPlist.strings */,
+				5076121318CAA7460043773C /* main.m */,
+				5076121518CAA7460043773C /* Bible Assistant-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5076122F18CAA7470043773C /* Bible AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				5076123518CAA7470043773C /* Bible_AssistantTests.m */,
+				5076123018CAA7470043773C /* Supporting Files */,
+			);
+			path = "Bible AssistantTests";
+			sourceTree = "<group>";
+		};
+		5076123018CAA7470043773C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5076123118CAA7470043773C /* Bible AssistantTests-Info.plist */,
+				5076123218CAA7470043773C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5076124A18CAC9910043773C /* Bible */ = {
+			isa = PBXGroup;
+			children = (
+				5076124118CAC2910043773C /* BABibleViewController.h */,
+				5076124218CAC2910043773C /* BABibleViewController.m */,
+				5076124418CAC2D60043773C /* BABibleVolumeCell.h */,
+				5076124518CAC2D60043773C /* BABibleVolumeCell.m */,
+				5076124B18CAC9C00043773C /* BABibleChapterViewController.h */,
+				5076124C18CAC9C00043773C /* BABibleChapterViewController.m */,
+				5076124E18CAC9E10043773C /* BABibleChapterCell.h */,
+				5076124F18CAC9E10043773C /* BABibleChapterCell.m */,
+				5076125318CADD410043773C /* BABibleSectionViewController.h */,
+				5076125418CADD410043773C /* BABibleSectionViewController.m */,
+				5076125618CB1D280043773C /* BABibleTitleCell.h */,
+				5076125718CB1D280043773C /* BABibleTitleCell.m */,
+				5076125918CB1D3F0043773C /* BABibleTextCell.h */,
+				5076125A18CB1D3F0043773C /* BABibleTextCell.m */,
+				50505ACB18E1B89F00F82C36 /* BABibleTextCellDelegate.h */,
+			);
+			name = Bible;
+			sourceTree = "<group>";
+		};
+		5076126818CD9B030043773C /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				5076126518CD9AFF0043773C /* BAQuoteViewController.h */,
+				5076126618CD9AFF0043773C /* BAQuoteViewController.m */,
+			);
+			name = Quote;
+			sourceTree = "<group>";
+		};
+		508F629218E7CF2B00AA3070 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				508F629318E7CF9700AA3070 /* BAAudioVolumeViewController.h */,
+				508F629418E7CF9700AA3070 /* BAAudioVolumeViewController.m */,
+				508F629618E7CFC400AA3070 /* BAAudioChapterViewController.h */,
+				508F629718E7CFC400AA3070 /* BAAudioChapterViewController.m */,
+				508F629F18E80AF100AA3070 /* BAAudioChapterCell.h */,
+				508F62A018E80AF100AA3070 /* BAAudioChapterCell.m */,
+				508F62A218E84AB800AA3070 /* BAAudioChpaterDelegate.h */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		508F62A818EFBCD700AA3070 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				508F62A518EFBCCF00AA3070 /* BASettingsViewController.h */,
+				508F62A618EFBCCF00AA3070 /* BASettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		508F62A918EFC50400AA3070 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4793EEB718E3BF0500CBBA0C /* BAModel.xcdatamodeld */,
+				508F62AA18F02F1500AA3070 /* BibleAudio.h */,
+				508F62AB18F02F1500AA3070 /* BibleAudio.m */,
+				508F62B318F0366300AA3070 /* BibleAudio+BAAdditions.h */,
+				508F62B418F0366300AA3070 /* BibleAudio+BAAdditions.m */,
+				508F62AD18F02F1500AA3070 /* Bookmark.h */,
+				508F62AE18F02F1500AA3070 /* Bookmark.m */,
+				508F628C18E7BE9C00AA3070 /* BAAudioSaver.h */,
+				508F628D18E7BE9C00AA3070 /* BAAudioSaver.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5076120318CAA7460043773C /* Bible Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5076123918CAA7470043773C /* Build configuration list for PBXNativeTarget "Bible Assistant" */;
+			buildPhases = (
+				682DB8B213AE4D60BC731404 /* Check Pods Manifest.lock */,
+				5076120018CAA7460043773C /* Sources */,
+				5076120118CAA7460043773C /* Frameworks */,
+				5076120218CAA7460043773C /* Resources */,
+				0BB6D27E5DC245DA85A79FF0 /* Copy Pods Resources */,
+				501C565918FACE4F0098937E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bible Assistant";
+			productName = "Bible Assistant";
+			productReference = 5076120418CAA7460043773C /* Bible Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5076122718CAA7470043773C /* Bible AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5076123C18CAA7470043773C /* Build configuration list for PBXNativeTarget "Bible AssistantTests" */;
+			buildPhases = (
+				5076122418CAA7470043773C /* Sources */,
+				5076122518CAA7470043773C /* Frameworks */,
+				5076122618CAA7470043773C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5076122E18CAA7470043773C /* PBXTargetDependency */,
+			);
+			name = "Bible AssistantTests";
+			productName = "Bible AssistantTests";
+			productReference = 5076122818CAA7470043773C /* Bible AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		507611FC18CAA7460043773C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = nixWork;
+				TargetAttributes = {
+					5076120318CAA7460043773C = {
+						DevelopmentTeam = 8D957V42M6;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					5076122718CAA7470043773C = {
+						TestTargetID = 5076120318CAA7460043773C;
+					};
+				};
+			};
+			buildConfigurationList = 507611FF18CAA7460043773C /* Build configuration list for PBXProject "Bible Assistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 507611FB18CAA7460043773C;
+			productRefGroup = 5076120518CAA7460043773C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5076120318CAA7460043773C /* Bible Assistant */,
+				5076122718CAA7470043773C /* Bible AssistantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5076120218CAA7460043773C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076121E18CAA7460043773C /* Main_iPad.storyboard in Resources */,
+				508F62A418EFB4DC00AA3070 /* bible.xml in Resources */,
+				5076122318CAA7470043773C /* Images.xcassets in Resources */,
+				5076121B18CAA7460043773C /* Main_iPhone.storyboard in Resources */,
+				5076121218CAA7460043773C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5076122618CAA7470043773C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076123418CAA7470043773C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB6D27E5DC245DA85A79FF0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		501C565918FACE4F0098937E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO|FIXME\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+		682DB8B213AE4D60BC731404 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5076120018CAA7460043773C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501C56651905480C0098937E /* BAAudioPlayer.m in Sources */,
+				5076125818CB1D280043773C /* BABibleTitleCell.m in Sources */,
+				508F628E18E7BE9C00AA3070 /* BAAudioSaver.m in Sources */,
+				508F62AF18F02F1500AA3070 /* Bookmark.m in Sources */,
+				4793EEB918E3BF0500CBBA0C /* BAModel.xcdatamodeld in Sources */,
+				508F629818E7CFC400AA3070 /* BAAudioChapterViewController.m in Sources */,
+				5076124618CAC2D60043773C /* BABibleVolumeCell.m in Sources */,
+				5076124918CAC6060043773C /* UIColor+AppColor.m in Sources */,
+				5076121418CAA7460043773C /* main.m in Sources */,
+				508F62B518F0366300AA3070 /* BibleAudio+BAAdditions.m in Sources */,
+				47E38C8218D98B1800EB2224 /* BALabel.m in Sources */,
+				5076125B18CB1D3F0043773C /* BABibleTextCell.m in Sources */,
+				508F62A718EFBCCF00AA3070 /* BASettingsViewController.m in Sources */,
+				47E38C7118D853A900EB2224 /* BASearchViewController.m in Sources */,
+				50E0CFBE190CA45C0023C04B /* BAStatusHUD.m in Sources */,
+				47E38C7518D8543F00EB2224 /* BASearchResultCell.m in Sources */,
+				47E38C8818D9AA6F00EB2224 /* BAView.m in Sources */,
+				47E38C7E18D9841000EB2224 /* UIView+BAAnimation.m in Sources */,
+				5076125518CADD410043773C /* BABibleSectionViewController.m in Sources */,
+				47E38C8518D99FAF00EB2224 /* BATextView.m in Sources */,
+				50F37B9E18F8D33900F85560 /* BADownloadManager.m in Sources */,
+				4793EEC618E4302000CBBA0C /* BABookmarkCell.m in Sources */,
+				508F62AC18F02F1500AA3070 /* BibleAudio.m in Sources */,
+				5076124318CAC2910043773C /* BABibleViewController.m in Sources */,
+				4793EEC218E4019700CBBA0C /* BABookmarksViewController.m in Sources */,
+				508F629518E7CF9700AA3070 /* BAAudioVolumeViewController.m in Sources */,
+				5076121818CAA7460043773C /* BAAppDelegate.m in Sources */,
+				508F62A118E80AF100AA3070 /* BAAudioChapterCell.m in Sources */,
+				5076124D18CAC9C00043773C /* BABibleChapterViewController.m in Sources */,
+				5076126718CD9AFF0043773C /* BAQuoteViewController.m in Sources */,
+				5076125018CAC9E10043773C /* BABibleChapterCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5076122418CAA7470043773C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5076123618CAA7470043773C /* Bible_AssistantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5076122E18CAA7470043773C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5076120318CAA7460043773C /* Bible Assistant */;
+			targetProxy = 5076122D18CAA7470043773C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5076121018CAA7460043773C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5076121118CAA7460043773C /* en */,
+				5056AF2718E47832003E4A7C /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5076121918CAA7460043773C /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5076121A18CAA7460043773C /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5076121C18CAA7460043773C /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5076121D18CAA7460043773C /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5076123218CAA7470043773C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5076123318CAA7470043773C /* en */,
+				5056AF2818E47832003E4A7C /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5076123718CAA7470043773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5076123818CAA7470043773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5076123A18CAA7470043773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bible Assistant/Bible Assistant-Prefix.pch";
+				INFOPLIST_FILE = "Bible Assistant/Bible Assistant-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5076123B18CAA7470043773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D45C30BB30F4D4EA352EFE5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bible Assistant/Bible Assistant-Prefix.pch";
+				INFOPLIST_FILE = "Bible Assistant/Bible Assistant-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5076123D18CAA7470043773C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bible Assistant.app/Bible Assistant";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bible Assistant/Bible Assistant-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bible AssistantTests/Bible AssistantTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5076123E18CAA7470043773C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bible Assistant.app/Bible Assistant";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bible Assistant/Bible Assistant-Prefix.pch";
+				INFOPLIST_FILE = "Bible AssistantTests/Bible AssistantTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		507611FF18CAA7460043773C /* Build configuration list for PBXProject "Bible Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5076123718CAA7470043773C /* Debug */,
+				5076123818CAA7470043773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5076123918CAA7470043773C /* Build configuration list for PBXNativeTarget "Bible Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5076123A18CAA7470043773C /* Debug */,
+				5076123B18CAA7470043773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5076123C18CAA7470043773C /* Build configuration list for PBXNativeTarget "Bible AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5076123D18CAA7470043773C /* Debug */,
+				5076123E18CAA7470043773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4793EEB718E3BF0500CBBA0C /* BAModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4793EEB818E3BF0500CBBA0C /* BAModel.xcdatamodel */,
+			);
+			currentVersion = 4793EEB818E3BF0500CBBA0C /* BAModel.xcdatamodel */;
+			path = BAModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 507611FC18CAA7460043773C /* Project object */;
+}

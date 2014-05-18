@@ -1,0 +1,5 @@
+#include "Pods-EEHUDView.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/EEHUDView" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/EEHUDView" "${PODS_ROOT}/Headers/FFCircularProgressView" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/Ono" "${PODS_ROOT}/Headers/SGNavigationProgress"
+OTHER_LDFLAGS = -ObjC ${PODS_EEHUDVIEW_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
